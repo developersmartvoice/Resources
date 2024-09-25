@@ -1,0 +1,1861 @@
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="VipsPM - Project Management Suite is a Powerful web-based Project Management suite." />
+    <meta name="keywords" content="html5,css3,javascript,jquery,bootstrap4,media,angular,angular8,laravel,php,project management,responsive,erp,web app,client,client management,freelancer,user management,projects,project management,tasks,tasks management,tickets,todos,holidays,work,team management,roles,permission,departments,defects,staff management,project management system,business management" />
+    <meta name="author" content="Chetsapp Private Limited" />
+    <title>Documentation | VipsPM</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/logos/vipspm-dark-logo.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="img/logos/vipspm-dark-logo.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/logos/vipspm-dark-logo.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/logos/vipspm-dark-logo.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="all">
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900|Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="documentation-page">
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="overlay"></div>
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <i class="fas fa-bar"></i>
+                <span class="mt-0"></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="sidebar-header text-center">
+                <img src="img/vipspm_logo_large.png" width="150" alt="VipsPM" />
+            </div>
+            <div class="sidebar-scroll">
+                <ul class="list-unstyled components m-0">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li>
+                        <a href="#installation" class="nav-dropdown">Installation</a>
+                        <ul class="dropdown-container list-unstyled mt-0 pt-0 ">
+                            <li>
+                                <a href="#installation1">Single</a>
+                            </li>
+                            <li>
+                                <a href="#installation2" class="nav-dropdown">Separate</a>
+                                <ul class="dropdown-container list-unstyled mt-0 pt-0 ">
+                                    <li>
+                                        <a href="#installation_angular">Installing VipsPM-angular</a>
+                                    </li>
+                                    <li>
+                                        <a href="#installation_laravel">Installing VipsPM-laravel</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#troubleshooting" class="nav-dropdown">Troubleshooting</a>
+                        <ul class="dropdown-container list-unstyled mt-0 pt-0 ">
+                            <li>
+                                <a href="#prerequisites">Prerequisites</a>
+                            </li>
+                            <li>
+                                <a href="#installation_laravel_manual">Manually Change Configurations for VipsPM-laravel (backend)</a>
+                            </li>
+                            <li>
+                                <a href="#faq">FAQ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#updation" class="nav-dropdown">Updation</a>
+                        <ul class="dropdown-container list-unstyled mt-0 pt-0 ">
+                            <li>
+                                <a href="#updation1">Single Installation</a>
+                            </li>
+                            <li>
+                                <a href="#updation2">Development (Local server)</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#theme_options">Theme Options</a></li>
+                    <li><a href="#vipspm_uses">How to Use</a></li>
+                    <li><a href="#modules">Module Pages</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                    <li><a href="#source_code">Source Code Structure</a></li>
+                    <li><a href="#customer_support">Customer Support</a></li>
+                    <li><a href="#source_credit">Sources and Credits</a></li>
+                    <li><a href="#notes">Notes</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content -->
+        <div id="document-content" class="content">
+            <!-- Introduction Section Start-->
+            <section id="introduction">
+                <div class="page-header">
+                    <h3><span class="title-number"> 1 </span> VipsPM - Project Management Suite</h3>
+                </div>
+                <p><b>VipsPM - Project Management Suite</b> is a web-based project management suite. VipsPM is a perfect tool to fulfill all your project management needs. VipsPM is a modern tool built with latest technologies like Angular 8(Front-end), Laravel 11.*(Back-end), PHP & MySQL database. The Angular CLI makes it easy to maintain this application that already works, right out of the box. It includes 7 Transparent, 7 gradient, Dark Theme Layout, unlimited custom menu color options and 3 different sizes with organized folder structure, clean & commented code.</p>
+                <style>
+                ul#menu li {
+                    display: inline;
+                }
+                </style>
+                <ul id="menu">
+                    <b>Project Management</b>
+                    <li>Project Planner</li>
+                    <li>Projects Management</li>
+                    <li>Tasks Management</li>
+                    <li>Defects Management</li>
+                    <li>Incidents Management</li>
+                    <li>Appointments</li>
+                    <li>File Manager</li>
+                    <li>KnowledgeBase(Documents)</li>
+                    <li>Meetings</li>
+                    <li>Emails</li>
+                    <li>ToDos</li>
+                    <li>Calendar</li>
+                    <li>Reports</li>
+                </ul>
+                <ul id="menu">
+                    <b>Administration</b>
+                    <li>Departments</li>
+                    <li>Role Management</li>
+                    <li>Flexible Permissions</li>
+                    <li>Settings</li>
+                    <li>Theme Options</li>
+                    <li>Dynamic Menu Allocation</li>
+                </ul>
+                <ul id="menu">
+                    <b>Human Resource Management</b>
+                    <li>User Management</li>
+                    <li>Team Management</li>
+                    <li>Leave Management</li>
+                    <li>Holidays Management</li>
+                    <li>Timesheets</li>
+                    <li>Timer</li>
+                </ul>
+                <ul id="menu">
+                    <b>Sales Management</b>
+                    <li>Estimation</li>
+                    <li>Invoice Management</li>
+                    <li>Payments Management</li>
+                    <li>Items Management</li>
+                    <li>Tax Management</li>
+                    <li>Client Management</li>
+                </ul>
+                <p>VipsPM comes with AOT and Lazy Loading. With AOT, the browser downloads a pre-compiled version of the application. The browser loads executable code so it can render the application immediately, without waiting to compile the app first. With Lazy Loading, it allows you to load JavaScript components asynchronously when a specific route is activated.</p>
+                <p><b>Developed By:</b>&nbsp;<a href="https://chetsapp.com" target="_blank">ChetsApp Private Limited</a></p>
+                <p><b>Created:</b>&nbsp;17 Dec 2019</p>
+                <p><b>Updated:</b>&nbsp;11 July 2023</p>
+                <p><b>Contact:</b>&nbsp;<a href="mailto:support@chetsapp.com">support@chetsapp.com</a></p>
+                <hr>
+                <p><strong>Thanks for purchasing this item.</strong></br>Please read carefully the complete documentation before starting.</br>If you have any questions that are beyond the scope of this documentation, please feel free to contact us via email. Thanks a lot!</p>
+            </section>
+            <!-- Introduction Section End -->
+            <div class="col-md-12">
+                <hr class="p-4">
+            </div>
+            <!-- Installation Section Start -->
+            <section id="installation">
+                <div class="page-header">
+                    <h3><span class="title-number"> 2 </span> Installation</h3>
+                </div>
+                <p class="mt-5 text-info"><b>On some operating systems, the . (period) files are hidden by default. <br> Before starting to upload the files, Please make sure your file explorer has the option to view hidden files turned on.</b></p>
+                <p>After all software prerequisites is done, download the ZIP archive and take the <code>VipsPM4.0.zip</code>, then unzip it to your desired place.</p>
+                <ul class="font-14 ml-3">
+                    <li>If you are using XAMPP, place your folder inside <code>htdocs/</code> directory.</li>
+                    <li>If you are using WAMP, place your folder inside <code>www/</code> directory.</li>
+                    <li>If you are using LIVE SERVER, place your folder inside <code>public_html/</code> directory.</li>
+                    <li>If you are using LINUX, place your folder inside <code>var/www/html/</code> directory.</li>
+                </ul>
+                <ul class="ml-3">
+                    <li>In this zip file, we have provide 3 main folders:
+                        <ul>
+                            <li><code>Installation</code></li>
+                            <li><code>Separate_installation</code></li>
+                            <li><code>VipsPM_update4.0</code></li>
+                        </ul>
+                    </li>
+                    <li><code>Installation</code> folder has frontend and backend together which you can upload/deploy in shared hosting or live server and run your application for initial setup. It is very quick. you can deploy in single subdomain.</li>
+                    <li><code>Separate_installation</code> folder use for developing. This contains <code>VipsPM_angular</code> (For frontend) and <code>VipsPM_laravel</code> (For backend) subfolders for seperate installation on your developing environment.</li>
+                    <li><code>VipsPM_update4.0</code> folder use for update your existing environment of VipsPM application.</li>
+                </ul>
+                <div class="col-md-12">
+                    <hr class="p-4">
+                </div>
+                <!-- Installation1 Section -->
+                <div class="sub-content" id="installation1">
+                    <div class="page-header">
+                        <h3><span class="title-number">2.1</span>Single Installation</h3>
+                    </div>
+                    <p><b>Step 1:</b> Open your shared hosting cPanel.</p>
+                    <p><b>Step 2:</b> Click on file upload.</p>
+                    <p><b>Step 3:</b> Upload the <code>VipsPM4.0/Installation</code> folder content to the root directory of <code>public_html</code> or You can create your own folder/subfolder inside the <code>public_html</code> and upload <code>VipsPM4/Installation</code> folder's contents on that folder.</p>
+                    <p><b>Step 4:</b> If everything went well, open your domain URL.</p>
+                    <ul class="ml-3">
+                        <li> <b>Main Domain Setup (https://yourdomain.com)</b><br>
+                            If you have upload <code>Installation</code> folder to <code>public_html/</code>, then your URL become <code>https://yourdomain.com/public</code><br>
+                            <b>For Example.</b><br>
+                            <b>Domain : </b>https://chetsapp.de<br>
+                            <b>Document Root : </b>/public_html<br>
+                        </li>
+                        <li><b>Sub Domain Setup (https://vipspm.yourdomain.com)</b><br>
+                            If you have created your own folder/subfolder inside the <code>public_html</code> and upload <code>VipsPM4.0/Installation</code> folder's content inside it, then your URL become <code>https://vipspm.yourdomain.com/public</code><br>
+                            <span class="text-info">Note - It is compulsory to create new sub domain if you want to deploy project inside subfolder. Subdomain document root should be <code>/public_html/folder</code> and access URL should be <code>https://vipspm.yourdomain.com/public</code></span><br>
+                            <b>For Example.</b><br>
+                            <b>Subdomain : </b>https://vipspm.chetsapp.de<br>
+                            <b>Document Root : </b>/public_html/vipspm<br>
+                        </li>
+                    </ul>
+                    <p>After this, You can see the screen like this. Next, click on Check Requirements button.</p>
+                    <img src="img/installer/1.png" width="420">
+                    <p><strong>Step 5: </strong>Fullfill the server requirements by installing the required following php extensions, if not installed. Next, click on Check Permissions button.</p>
+                    <img src="img/installer/2.png">
+                    <p><strong>Step 6: </strong>Check and give required permissions to the folders/files. Next click on Configure Environment button.</p>
+                    <p class="ml-3">If you have any issue regarding folders/files permissions, you can give manually permissions to that folders and files.</p>
+                    <p class="ml-3">To get more help <a href="https://laravel.com/docs/11.x/configuration" target="_blank">check laravel configuration documentation.</a></p>
+                    <img src="img/installer/3.png">
+                    <p><strong>Step 7: </strong>Check and set your application environments configurations like application's name, email, timezone, application front and backend URL. This settings will be replace with <code>.env</code> file. Next click on Setup Database button.</p>
+                    <ul class="ml-3">
+                        <li><strong>App Name:</strong> Your application name, whatever you want.</li>
+                        <li><strong>Site Email:</strong> Your site email, whatever you want.</li>
+                        <li><strong>Support Email:</strong> Site support email, whatever you want.</li>
+                        <li><strong>Timezone:</strong> Select timezone related to your countries.</li>
+                        <li><strong>App Environment:</strong> Select you're debugging mode like local, production, etc...</li>
+                        <li><strong>App Log Level:</strong> Generate application log for debug, info, notic, warning etc...</li>
+                        <li><strong>App Debug:</strong> Set your application in debug mode or not.</li>
+                        <li><strong>API URL:</strong> Set your application root URL, You can copy your current window tab URL path till public folder, Do not enter forward slash (/) after public.<br>
+                            <strong>Examples:</strong><br><code>https://yourdomain.com/public</code><br><code>https://yoursubdomain.com/public</code></li>
+                        <li><strong>Front URL:</strong> Set your frontend application URL. Remove public from the above API URL and it will become your frontend URL.<br>
+                            <strong>Examples:</strong><br><code>https://yourdomain.com</code><br><code>https://yoursubdomain.com</code></li>
+                    </ul>
+                    <img src="img/installer/4.png">
+                    <p><strong>Step 8: </strong>Create a database on your web host.</p>
+                    <ul class="ml-3">
+                        <li>Most cPanel comes with PHPMyAdmin and Mysql Database Wizard. Use the Mysql Database wizard to create a Database and User, then assign the user to the database allowing all privileges. Note down the username and password you'll need that soon.</li>
+                    </ul>
+                    <p><strong>Step 9: </strong>Check and set your database environments configurations like database name, host, port, username and password. Next click on Setup Application Button.</p>
+                    <ul class="ml-3">
+                        <li>
+                            <strong>Table Prefix:</strong> Choose prefix that includes only alphabets and underscore. Not include any special characters, spaces, etc. The maximum size should not be more then 10 characters.
+                        </li>
+                        <li>
+                            <strong>Database Host:</strong> Your database host. For more info check you PHPMyAdmin configurations.
+                            <br><strong>Examples:</strong><code> localhost, 127.0.0.1</code>
+                        </li>
+                        <li>
+                            <strong>Database Port:</strong> Your database port. For more info check you PHPMyAdmin configurations.
+                            <br><strong>Example:</strong><code> 3306</code>
+                        </li>
+                        <li><strong>Database Name:</strong> Your database name.</li>
+                        <li><strong>Database Username:</strong> Your database username.</li>
+                        <li><strong>Database password:</strong> Your database password. This field is optional depends on your PHPMyAdmin login credentials.</li>
+                        <li><strong></strong></li>
+                    </ul>
+                    <img src="img/installer/5.png">
+                    <p>
+                        <strong>Step 10: </strong>Setup your SMTP mail configurations like host, port, username, password, etc. You can skip this step at the time of installation, but it is compulsory to configure email settings for email functionality. Next click on Install Button.
+                    </p>
+                    <ul class="ml-3">
+                        <li>
+                            <strong>Mail Driver:</strong> SMTP.
+                        </li>
+                        <li>
+                            <strong>Mail Host:</strong> Your SMTP mail server host.
+                        </li>
+                        <li>
+                            <strong>Mail Port:</strong> Outgoing mail port.
+                        </li>
+                        <li><strong>Mail Username:</strong> Outgoing mail address.</li>
+                        <li><strong>Mail Password:</strong> Outgoing mail password.</li>
+                        <li><strong>Mail Encryption:</strong> It should be tls or ssl.</li>
+                        <li>
+                            <strong>Example:</strong>
+                            <br><strong>Mail Driver:</strong> smtp
+                            <br><strong>Mail Host:</strong> smtp.gmail.com
+                            <br><strong>Mail Port:</strong> 587
+                            <br><strong>Mail Username:</strong> example@gmail.com
+                            <br><strong>Mail Password:</strong> Example@123!
+                            <br><strong>Mail Encryption:</strong> tls
+                            <p>
+                                <strong><span class="text-danger">Note: </span></strong>You can find your server email settings under cPanel Mail Client Manual Settings.
+                                <br><code>Start -> Email -> E-Mail Accounts -> Connect Device -> Mail Client Manual Settings</code></p>
+                        </li>
+                    </ul>
+                    <img src="img/installer/6.png">
+                    <p><strong>Step 11: </strong>After successfully installation you get the following screen, otherwise back to the previews steps. Next click to the Configure Site button.</p>
+                    <img src="img/installer/7.png">
+                    <p><strong>Step 12: </strong>Configure your site admin user by adding username, first name, last name, currency, email, and password. Next click to the Save and Finish button.</p>
+                    <p>The site user is a super admin of your site, that has full rights to access all functionalities of the whole site. He can create users, clients, projects, departments with roles and permissions etc...</p>
+                    <img src="img/installer/8.png">
+                    <p><strong>Step 13: </strong>After successful installation you must have to create <code>root/.htaccess</code> file according to your server for restrict direct browser access of sensitive files. You can see sample code below.</p>
+                    <img src="img/htaccess.png">
+                    <p>If you get any issue then read <a href="#faq">FAQ</a>.</p>
+                </div>
+                <!-- Introduction1 Section End -->
+                <div class="col-md-12">
+                    <hr class="p-4">
+                </div>
+                <!-- Installation2 Section -->
+                <div class="sub-content" id="installation2">
+                    <div class="page-header">
+                        <h3><span class="title-number">2.2</span>Separate (Development)</h3>
+                    </div>
+                    <!-- Installtion angular Section Start -->
+                    <div class="sub-content" id="installation_angular">
+                        <div class="page-header">
+                            <h3><span class="title-number">2.2.1</span>Installing VipsPM-angular (Frontend)</h3>
+                        </div>
+                        <!-- Angular setup -->
+                        <p>Following steps for setup angular application in your local or development environment.</p>
+                        <p><b>Step 1:</b> After unzip <code>VipsPM4.0.zip</code> file, go to <code>VipsPM4.0/Separate_installation/VipsPM_angular</code> folder.</p>
+                        <ul class="ml-3">
+                            <li>This is the root folder of Frontend Angular Application, where all the frontend angular source files are available. Also, you have to run an angular CLI command in this place.</li>
+                        </ul>
+                        <p><b>Step 2:</b> If you don't have node installed then <a href="https://nodejs.org/en/download" target="_blank">Download</a> and install it. (Node supported version is <code>16.15.1</code>)</p>
+                        <p><b>Step 3:</b> If you don't have Angular CLI installed globally, run the following command <code>npm install -g @angular/cli@8.3.24</code> to install it on your machine. If you have already, you may skip this step.</p>
+                        <p><b>Step 4:</b> Open the terminal, command prompt etc... , Go to the root folder of <code>VipsPM_angular</code> and Install all dependencies using <code>npm install</code> command.</p>
+                        <p><b>Step 5: </b>Follow the below steps for Frontend Angular Application installation after setup Backend Laravel Application.</p>
+                        <p>For development, Let's open up the <code>src/environments/environment.ts</code> file, change the apiUrl as URL of backend laravel application.</p>
+                        <ul class="ml-3">
+                            <li>If your laravel application inside <code>htdocs/VipsPM_laravel</code> folder then, your apiURL become <code>http://localhost/VipsPM_laravel/public</code></li>
+                            <li>And another option is that start the laravel application server using <code>php artisan serve</code> and set <code>http://127.0.0.1:8000</code> as apiUrl.</li>
+                        </ul>
+                        <img src="img/environment_1.png" alt="VipsPM" height="600" />
+                        <p><b>Step 6:</b> For production, Let's open up the <code>src/environments/environment.prod.ts</code> file, change the apiUrl URL, where you have deployed the Laravel application on server. Ex. <code>https://domain.com/public.</code></p>
+                        <img src="img/environment_2.png" alt="VipsPM" height="600" />
+                        <h4>Running Angular Server</h4>
+                        <ul class="ml-3">
+                            <li>Run <code>ng serve</code></li>
+                            <li>Open the browser and Visit the url: <code> http://localhost:4200</code></li>
+                            <li>You can directly open the browse by using <code>--open</code> flag with <code>ng serve</code>.</li>
+                            <li>For Exa. <code>ng serve --open</code></li>
+                        </ul><br>
+                        <h4>Build</h4>
+                        <ul class="ml-3">
+                            <li>Run <code>ng build</code> to build the project.</li>
+                            <li>The build artifacts will be stored in the <code>dist/</code> directory.</li>
+                            <li>For production use the <code>--prod</code> flag.</li>
+                            <li>For Exa. <code>ng build --prod</code></li>
+                        </ul><br>
+                        <h4>Angular Project Deployment on Live Server</h4>
+                        <ul class="ml-3">
+                            <li>Deploy your Angular application to a remote server.</li>
+                            <li>Create a production build and copy the output directory to a web server.</li>
+                            <li>To get more help <a href="https://angular.io/guide/deployment" target="_blank">check angular project deployment guide.</a></li>
+                        </ul><br>
+                        <h4>Help</h4>
+                        <p>If your changes of source files not affected on web pages then run <code>ng serve --poll=2000</code> command instead of <code>ng serve</code>.</p>
+                        <p>To get more help on the Angular CLI use <code> ng help </code> or go check out the <a href="https://github.com/angular/angular-cli/blob/master/README.md" target="_blank">Angular CLI README</a></p>
+                        <br>
+                    </div>
+                    <!-- Installtion Angular Section End -->
+                    <!-- Laravel installtion -->
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <!-- Installtion laravel Section Start -->
+                    <div class="sub-content" id="installation_laravel">
+                        <div class="page-header">
+                            <h3><span class="title-number">2.2.2</span>Installing VipsPM-laravel (backend)</h3>
+                        </div>
+                        <p>Following steps for setup laravel application in your local or development environment.</p>
+                        <p><b>Step 1: </b>After unzip <code>VipsPM4.0.zip</code> file, go to <code>VipsPM4.0/Separate_installation/VipsPM_laravel</code> folder. This is the root folder of the backend laravel application, where all the backend laravel source files are available.</p>
+                        <p><b>Step 2:</b> Open the terminal, command prompt etc... , Go to the root folder of <code>VipsPM_laravel</code>.</p>
+                        <p><strong>Step 3: </strong>Install all dependancy using <a href="https://getcomposer.org/download" target="_blank">composer install</a>.</p>
+                        <p><strong>Step 4: </strong>Configure required folders/files and set required permissions to that folders and files. Additionally, you have to set required permission to <code>public/uploads</code> folder.</p>
+                        <p class="ml-3">To get more help <a href="https://laravel.com/docs/11.x/configuration" target="_blank">check laravel configuration documentation.</a></p>
+                        <p> open URL <code>http://localhost/VipsPM_laravel/public</code></p>
+                        <p>After this, You can see the screen like this. Next, click on Check Requirements button.</p>
+                        <img src="img/installer/1.png" width="420">
+                        <p><strong>Step 5: </strong>Fullfill the server requirements by installing the required following php extensions, if not installed. Next, click on Check Permissions button.</p>
+                        <img src="img/installer/2.png">
+                        <p><strong>Step 6: </strong>Check and give required permissions to the folders/files. Next click on Configure Environment button.</p>
+                        <p class="ml-3">If you have any issue regarding folders/files permissions, you can give manually permissions to that folders and files.</p>
+                        <p class="ml-3">To get more help <a href="https://laravel.com/docs/11.x/configuration" target="_blank">check laravel configuration documentation.</a></p>
+                        <img src="img/installer/3_1.png">
+                        <p><strong>Step 7: </strong>Check and set your application environments configurations like application's name, email, timezone, application front and backend URL. This settings will be replace with <code>.env</code> file. Next click on Setup Database button.</p>
+                        <ul class="ml-3">
+                            <li><strong>App Name:</strong> Your application name, whatever you want.</li>
+                            <li><strong>Site Email:</strong> Your site email, whatever you want.</li>
+                            <li><strong>Support Email:</strong> Site support email, whatever you want.</li>
+                            <li><strong>Timezone:</strong> Select timezone related to your countries.</li>
+                            <li><strong>App Environment:</strong> Select you're debugging mode like local, production, etc...</li>
+                            <li><strong>App Log Level:</strong> Generate application log for debug, info, notic, warning etc...</li>
+                            <li><strong>App Debug:</strong> Set your application in debug mode or not.</li>
+                            <li><strong>API URL:</strong> Set your application root URL, You can copy your current window tab URL path till public folder, Do not enter forward slash (/) after public.<br>
+                                <strong>Examples:</strong><br><code>http://localhost/VipsPM_laravel/public</code></li>
+                            <li><strong>Front URL:</strong> Set your frontend application URL.<br>
+                                <strong>Examples:</strong><br><code>http://localhost:4200</code><br><code>http://localhost:5000</code>
+                            </li>
+                        </ul>
+                        <img src="img/installer/4.png">
+                        <p><strong>Step 8: </strong>Create a database on your web host.</p>
+                        <ul class="ml-3">
+                            <li>Use the phpmyadmin to create a Database and User, then assign the user to the database allowing all privileges. Note down the username and password you'll need that soon.</li>
+                        </ul>
+                        <p><strong>Step 9: </strong>Check and set your database environments configurations like database name, host, port, username and password. Next click on Setup Application Button.</p>
+                        <ul class="ml-3">
+                            <li>
+                                <strong>Table Prefix:</strong> Choose prefix that includes only alphabets and underscore. Not include any special characters, spaces, etc. The maximum size should not be more then 10 characters.
+                            </li>
+                            <li>
+                                <strong>Database Host:</strong> Your database host. For more info check you PHPMyAdmin configurations.
+                                <br><strong>Examples:</strong><code> localhost, 127.0.0.1</code>
+                            </li>
+                            <li>
+                                <strong>Database Port:</strong> Your database port. For more info check you PHPMyAdmin configurations.
+                                <br><strong>Example:</strong><code> 3306</code>
+                            </li>
+                            <li><strong>Database Name:</strong> Your database name.</li>
+                            <li><strong>Database Username:</strong> Your database username.</li>
+                            <li><strong>Database password:</strong> Your database password. This field is optional depends on your PHPMyAdmin login credentials.</li>
+                            <li><strong></strong></li>
+                        </ul>
+                        <img src="img/installer/5.png">
+                        <p>
+                            <strong>Step 10: </strong>Setup your SMTP mail configurations like host, port, username, password, etc. You can skip this step at the time of installation,but it is compulsory to configure email settings for email functionality. Next click on Install Button.
+                        </p>
+                        <ul class="ml-3">
+                            <li>
+                                <strong>Mail Driver:</strong> SMTP.
+                            </li>
+                            <li>
+                                <strong>Mail Host:</strong> Your SMTP mail server host.</li>
+                            <li>
+                                <strong>Mail Port:</strong> Outgoing mail port.
+                            </li>
+                            <li><strong>Mail Username:</strong> Outgoing mail address.</li>
+                            <li><strong>Mail Password:</strong> Outgoing mail password.</li>
+                            <li><strong>Mail Encryption:</strong> It should be tls or ssl.</li>
+                            <li>
+                                <strong>Example:</strong>
+                                <br><strong>Mail Driver:</strong> smtp
+                                <br><strong>Mail Host:</strong> smtp.gmail.com
+                                <br><strong>Mail Port:</strong> 587
+                                <br><strong>Mail Username:</strong> example@gmail.com
+                                <br><strong>Mail Password:</strong> Example@123!
+                                <br><strong>Mail Encryption:</strong> tls
+                                <p>
+                                    <strong><span class="text-danger">Note: </span></strong>You can use your email account settings here...
+                            </li>
+                        </ul>
+                        <img src="img/installer/6.png">
+                        <p><strong>Step 11: </strong>After successfully installation you get the following screen, otherwise back to the previews steps. Next click to the Configure Site button.</p>
+                        <img src="img/installer/7.png">
+                        <p><strong>Step 12: </strong>Configure your site admin user by adding username, first name, last name, currency, email, and password. Next click to the Save and Finish button.</p>
+                        <p>The site user is a super admin of your site, that has full rights to access all functionalities of the whole site. He can create users, clients, projects, departments with roles and permissions etc...</p>
+                        <img src="img/installer/8.png">
+                        <p><strong><span class="text-danger"> Important Notes</span></strong></p>
+                        <p>If any issue after installation then run the following commands:</p>
+                        <ul class="ml-3">
+                            <li><code>php artisan optimize</code></li>
+                        </ul>
+                        <p>Whenever you make changes in <code>.env</code> file, you must have to run following command for generating laravel caching.</p>
+                        <ul class="ml-3">
+                            <li><code>php artisan config:cache</code></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="col-md-12">
+                <hr class="p-4">
+            </div>
+            <section id="troubleshooting">
+                <div class="page-header">
+                    <h3><span class="title-number"> 3 </span> Troubleshooting</h3>
+                </div>
+                <!-- Prerequisites Section Start -->
+                <div class="sub-content" id="prerequisites">
+                    <div class="page-header">
+                        <h3><span class="title-number">3.3.1</span>Prerequisites</h3>
+                    </div>
+                    <ul class="ml-3">
+                        <li><a href="https://nodejs.org/en/download" target="_blank">Node and NPM</a> (Node Supported version <code>16.15.1</code>)</li>
+                        <li><a href="https://angular.io/guide/setup-local" target="_blank">Angular CLI</a> (Angular CLI Supported version <code>8.3.24</code>)</li>
+                    </ul>
+                    <p>For more info <a href="https://angular.io/docs" target="_blank">check angular documentation.</a></p><br>
+                    <h4>Set up the Development Angular CLI</h4>
+                    <ul class="mb-5 ml-3">
+                        <li>The Angular CLI is a command-line interface tool that can create a project. This guide is to build and run a simple angular application in TypeScript, using the Angular CLI while adhering to the <a href="https://angular.io/guide/quickstart" target="_blank">Style Guide</a></li>
+                        <li>You need to set up your development environment before you can do anything. Install <a href="https://nodejs.org/en/download" target="_blank">Node.js and npm</a> if they are not already on your machine.</li>
+                    </ul>
+                    <!-- Server Requirements -->
+                    <h4>Server Requirements</h4>
+                    <ul class="ml-3">
+                        <li>PHP >= 8.2</li>
+                        <li>Ctype PHP Extension</li>
+                        <li>cURL PHP Extension</li>
+                        <li>DOM PHP Extension</li>
+                        <li>Fileinfo PHP Extension</li>
+                        <li>Filter PHP Extension</li>
+                        <li>Hash PHP Extension</li>
+                        <li>Mbstring PHP Extension</li>
+                        <li>OpenSSL PHP Extension</li>
+                        <li>PCRE PHP Extension</li>
+                        <li>PDO PHP Extension</li>
+                        <li>Session PHP Extension</li>
+                        <li>Tokenizer PHP Extension</li>
+                        <li>XML PHP Extension</li>
+                        <li>PHP Zip extension </li>
+                        <li>JSON PHP Extension</li>
+                        <li>mod_rewrite Apache</li>
+                        <li>Cron (Running Per Minute)</li>
+                        <li>Composer</li>
+                    </ul>
+                    <p id="pageSubmenu">To get more help <a href="https://laravel.com/docs/11.x" target="_blank">check laravel documentation.</a></p><br>
+                    <h4>Install Composer (Globally)</h4>
+                    <p>To get more help <a href="https://getcomposer.org" target="_blank">check composer documentation.</a></p>
+                    <p class="mt-5">Now all software prerequisites is done. After downloading the ZIP archive take the <code>VipsPM4.0.zip</code>, then unzip it to your desired place.</p>
+                    <ul class="font-14 ml-3">
+                        <li>If you are using XAMPP, place your folder inside <code>htdocs/</code> directory.</li>
+                        <li>If you are using WAMP, place your folder inside <code>www/</code> directory.</li>
+                        <li>If you are using LIVE SERVER, place your folder inside <code>public_html/</code> directory.</li>
+                        <li>If you are using LINUX, place your folder inside <code>var/www/html/</code> directory.</li>
+                    </ul>
+                </div>
+                <!-- Installtion Angular Section End -->
+                <!-- Laravel installtion -->
+                <div class="col-md-12">
+                    <hr class="p-4">
+                </div>
+                <!-- Installtion laravel Section Start -->
+                <div class="sub-content" id="installation_laravel_manual">
+                    <div class="page-header">
+                        <h3><span class="title-number">3.3.2</span>Manually Change Configurations for VipsPM-laravel (backend)</h3>
+                    </div>
+                    <h4>Change your laravel application mail configurations.</h4>
+                    <img src="img/env_mail.png">
+                    <h4>Change your laravel application timezone and locale.</h4>
+                    <img src="img/env_locals.png">
+                    <h4>Change your database table prefix(Optional)</h4>
+                    <ul class="ml-5">
+                        <li>Choose prefix that includes only alphabets and underscore. Not include any special characters, spaces, etc. The maximum size should not more then 10 characters.</li>
+                        <li>The main use of the table prefix is that you can centralize your database on a specific server. Single database with unique tables.</li>
+                        <li>Ex. vipspm, capl, pms etc.</li>
+                    </ul>
+                    <img src="img/env_tableprefix.png">
+                    <ul class="ml-3">
+                        <li>All the laravel artisan command must be run on project root folder.</li>
+                        <li>If there are any changes related to laravel environment configurations, then you must have to run <code>php artisan config:cache</code></li>
+                        <li>Laravel application start from the public folder, so you must have to set <code>APP_URL</code> according that.</li>
+                        <li>Here, We have use laravel backend work as <code>Rest API</code>.</li>
+                    </ul>
+                </div>
+                <!-- Installtion laravel Section End -->
+                <div class="col-md-12">
+                    <hr class="p-4">
+                </div>
+                <!-- FAQ Section Start -->
+                <div class="sub-content" id="faq">
+                    <div class="page-header">
+                        <h3><span class="title-number">3.3.3</span>FaQ</h3>
+                    </div>
+                    <section class="accordion-section clearfix pt-1 mt-3" aria-label="Question Accordions">
+                        <div class="container">
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading p-2 mb-3" role="tab" id="heading0">
+                                        <p class="panel-title mt-1 mb-1">
+                                            <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="true" aria-controls="collapse0">
+                                                500 Whoops, something went wrong on our servers.
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
+                                        <div class="panel-body px-3 mb-4">
+                                            <ul>
+                                                <li>Check the <code>.env</code> file exists on the project root folder. If not then upload from zip.</li>
+                                                <li>Check the PHP version, We use <a href="https://laravel.com/docs/11.x" target="_blank">Laravel 11.*</a> and it's not support PHP 7.*, If your PHP version is 7.* then upgrade it to PHP 8.2.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading p-2 mb-3" role="tab" id="heading1">
+                                        <p class="panel-title mt-1 mb-1">
+                                            <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                                I'm getting white screen after installation. How to fix it ?
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                                        <div class="panel-body px-3 mb-4">
+                                            <ul>
+                                                <li>First of check with clear browser cache and hard reload.</li>
+                                                <li>Open <code>root/public/vendor/main.470b8fc2b14b27f34622.js</code> file. Just find <code>http://dev.vipspm.chetsapp.de</code> URL. if <code>http://dev.vipspm.chetsapp.de</code> URL is there then replace it with your API URL.</li>
+                                                <li>The API URL should be <code>https://yourdomain.com/public</code> or <code>https://yoursubdomain.com/public</code><br>Domain URL and API url protocol should be same.</li>
+                                                <li>Then empty the browser cache and hard reload it.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading p-2 mb-3" role="tab" id="heading2">
+                                        <p class="panel-title mt-1 mb-1">
+                                            <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                                How to change sidebar logo ?
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                                        <div class="panel-body px-3 mb-4">
+                                            <ul>
+                                                <li>Open your URL and move at <code>Settings->Theme</code> and upload sidebar logo.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading p-2 mb-3" role="tab" id="heading3">
+                                        <p class="panel-title mt-1 mb-1">
+                                            <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                                How to change favicon icon ?
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                                        <div class="panel-body px-3 mb-4">
+                                            <p>Find and open index.html file and change favicon icon.</p>
+                                            <p><b>For Single Installation:</b></p>
+                                            <ul>
+                                                <li>Upload favicon icon <code>root(Installation)\assets\img\logos\</code></li>
+                                                <li>Update name <code>root(Installation)\index.html</code></li>
+                                            </ul>
+                                            <p><b>For Separate Installation : </b></p>
+                                            <ul>
+                                                <li>Upload favicon icon <code>root(Separate_installation\VipsPM_angular)\src\assets\img\logos\</code></li>
+                                                <li>Update name <code>root(Separate_installation\VipsPM_angular)\src\index.html</code></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading p-2 mb-3" role="tab" id="heading4">
+                                        <p class="panel-title mt-1 mb-1">
+                                            <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                                Cronjob setup guide.
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                                        <div class="panel-body px-3 mb-4">
+                                            <ul>
+                                                <li>Active cron from cron job settings. <code>https://yourdomain.com//#/settings</code></li>
+                                                <li>
+                                                    <a href="#settings">Read cronjob settings</a><br>
+                                                    <strong>Examples:</strong><br>
+                                                    <code>* * * * * cd /path-to-your-project && php artisan schedule:run >> /dev/null 2>&1</code><br>
+                                                    <code>* * * * * cd /var/www/vipspm && /usr/bin/php artisan schedule:run >> /dev/null</code>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading p-2 mb-3" role="tab" id="heading5">
+                                        <p class="panel-title mt-1 mb-1"><a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                                                Where is language file in Installation?
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+                                        <div class="panel-body px-3 mb-4">
+                                            <ul>
+                                                <li><code>Installation\assets\i18n\</code></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading p-2 mb-3" role="tab" id="heading6">
+                                        <p class="panel-title mt-1 mb-1">
+                                            <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                                                How to change API URL in main.470b8fc2b14b27f34622.js file?
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+                                        <div class="panel-body px-3 mb-4">
+                                            <ul>
+                                                <li>Open the file. project_root(pm)\public\vendor\main.470b8fc2b14b27f34622.js</li>
+                                                <li>Find http://dev.vipspm.chetsapp.de and replace it with your API URL</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading p-2 mb-3" role="tab" id="heading7">
+                                        <p class="panel-title mt-1 mb-1">
+                                            <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                                                How to change URL in .env file in case of user activation URL is invalid ?
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+                                        <div class="panel-body px-3 mb-4">
+                                            <ul>
+                                                <li>Open .env file located at project_root(pm)\.env</li>
+                                                <li>Set APP_URL=<code>https://domain.com/public</code></li>
+                                                <li>Set FRONT_URL=<code>https://domain.com</code></li>
+                                                <li>Run this URL for config cache :: <code>https://domain.com/public/config-cache</code></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading p-2 mb-3" role="tab" id="heading8">
+                                        <p class="panel-title mt-1 mb-1">
+                                            <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="true" aria-controls="collapse8">
+                                                How to update copyright link on footer ?
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+                                        <div class="panel-body px-3 mb-4">
+                                            <ul>
+                                                <li>Open <code>https://domain.com/#/settings</code></li>
+                                                <li>Select Company Details tab.</li>
+                                                <li>Update Company Website.</li>
+                                                <li>Clear browser cache and hard reload page.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- FAQ Section End -->
+            </section>
+            <div class="col-md-12">
+                <hr class="p-4">
+            </div>
+            <!-- Installation Section End-->
+            <!-- Updation Section Start -->
+            <section id="updation">
+                <div class="page-header">
+                    <h3><span class="title-number"> 4 </span> Updation</h3>
+                </div>
+                <p class="ml-3 text-info"><b>New customers do not need to update the system, it is already updated.</b></p>
+                <p class="ml-3 text-info"><b>Before updating, Please make a backup of your existing files/database! Some updates will overwrite/delete old data that may be useful to you!</b></p>
+                <p class="ml-3 text-info"><b>For VipsPM 4.0 you have to set PHP version >= 8.2</b></p>
+                <!-- <p class="ml-3">Recomended to delete this 2 folders(on root <b> assets </b>and <b>public/vendor</b>) as angular build generate dynamic files so old files is no more needed.</p> -->
+                <p class="ml-3">After downloading the ZIP archive, take the <code>VipsPM4.0.zip</code>, then unzip it to your desired place.</p>
+                <ul class="ml-5">
+                    <li>In this zip file, we have provide 2 main folders inside <code>VipsPM_update4.0</code> folder:
+                        <ul>
+                            <li><code>Installation</code></li>
+                            <li><code>Separate_installation</code></li>
+                        </ul>
+                    </li>
+                    <li><code>Installation</code> folder is use for share hosting or live server. You can upload and update your application on share hosting(cPanel) or in live server.</li>
+                    <li><code>Separate_installation</code> folder is use for developing. This contains <code>VipsPM_angular</code> (For frontend) and <code>VipsPM_laravel</code> (For backend) subfolders for seperate updation on your developing environment.</li>
+                    <p class="ml-3">After update, please login as admin and provide permission to view new modules like Sales and HRM. to give permission goto admin-> department -> roles -> permission tick modules for view, edit, delete, etc.</p>
+                </ul>
+                <!-- Updation1 Section -->
+                <div class="sub-content" id="updation1">
+                    <div class="page-header">
+                        <h3><span class="title-number">4.1</span>Production (Live server or Shared hosting)</h3>
+                    </div>
+                    <p>If you want to update latest changes to your existing VipsPM application on your share hosting or live server, follow the following steps:</p>
+                    <p><b>Step 1:</b> Open your shared hosting cPanel.</p>
+                    <p><b>Step 2:</b> Go to your project root folder.</p>
+                    <p><b>Step 3:</b> Remove assets, vendor and public/vendor folder.</p>
+                    <p><b>Step 4:</b> Upload content of <code>VipsPM_update4.0/Installation</code> to your existing share hosting or live VipsPM application.</p>
+                    <p><b>Step 5:</b> Open <code>public/vendor/main.470b8fc2b14b27f34622.js</code> file and Find string <code>http://dev.vipspm.chetsapp.de</code> ,replace it with your existing created backend laravel API URL. <br><span class="text-info">Domain URL and API URL protocol should be same.</span><br><b>API URL Example:</b><br> <code>https://yourdomain.com/public</code><br><code>https://yoursubdomain.com/public</code></p>
+                    <p><b>Step 6:</b> Open terminal and run below commands.<br><code>composer dump-autoload</code><br><code>php artisan optimize</code></p>
+                    <p><b>Step 6:</b> Run this URL for update database, Don't forget to take database backup before run this URL.<br><code>https://yourdomain.com/public/updater/updatedb</code> or <code>https://yoursubdomain.com/public/updater/updatedb</code></p>
+                    <p><b>Step 7:</b> Open your domain URL Then empty the browser cache and hard reload it.</p>
+                    <p><b>Step 8:</b> Set new modules department vise permissions according to your requirements. <code>https://yourdomain.com/#/departments</code></p>
+                    <p><b>Note:</b></p>
+                    <ul class="ml-3">
+                        <li>If system return 500 then restart the server.</li>
+                    </ul>
+                </div>
+                <!-- Updation2 Section -->
+                <div class="sub-content" id="updation2">
+                    <div class="page-header">
+                        <h3><span class="title-number">4.2</span>Development (Local server)</h3>
+                    </div>
+                    <p>If you want to update latest changes to your existing VipsPM application on your development(Local) environment, follow the following steps:</p>
+                    <p><b>For laravel:</b></p>
+                    <ul class="ml-3">
+                        <li>Find and replace content of <code>VipsPM4.0/VipsPM_update4.0/Separate_installation/VipsPM_laravel</code> to your existing VipsPM laravel application.</li>
+                        <li>Run this URL for update databse. <code>http://localhost/VipsPM_laravel/public/updater/updatedb</code></li>
+                        <li>If any issue related to updation, run the following command on root of your laravel application.</li>
+                        <code class="ml-3">composer install</code><br>
+                        <code class="ml-3">php artisan optimize</code>
+                    </ul>
+                    <p><b>For angular:</b></p>
+                    <ul class="ml-3">
+                        <li>Find and replace content of <code>VipsPM4.0/VipsPM_update4.0/Separate_installation/VipsPM_angular</code> to your existing VipsPM angular application.</li>
+                        <li>If any issue related to updation, run the following command on root of your angular application.</li>
+                        <code class="ml-3">npm install</code><br>
+                        <code class="ml-3">npm cache clean --force</code><br>
+                    </ul>
+                </div>
+            </section>
+            <!-- Updation Section End -->
+            <div class="col-md-12">
+                <hr class="p-4">
+            </div>
+            <!-- Features Section Start -->
+            <section id="features">
+                <div class="page-header">
+                    <h3><span class="title-number"> 5 </span> VipsPM Key Features</h3>
+                </div>
+                <ul class="ml-3">
+                    <li>ngx-bootstrap</li>
+                    <li>Lazy loading</li>
+                    <li>Nested Routing</li>
+                    <li>Unlimited custom fields for projects, tasks, defects and incidents</li>
+                    <li>An Efficient Dashboard</li>
+                    <li>Sidebar backgound color with custom colorpicker</li>
+                    <li>Inline Editing</li>
+                    <li>File Browser for Media Library</li>
+                    <li>Mailbox</li>
+                    <li>Dark Theme</li>
+                    <li>Kanban Board</li>
+                    <li>Modern menu</li>
+                    <li>7 gradient and 7 Transparent menu colors</li>
+                    <li>Menu with background image</li>
+                    <li>Angular Full Calendar</li>
+                    <li>Angular Data Tables</li>
+                    <li>Integrated 3 Icon sets</li>
+                    <li>Solid + Gradient + Dark Color Schemes</li>
+                    <li>Useful helper classes</li>
+                    <li>Organized Folder Structure</li>
+                    <li>SASS Support</li>
+                    <li>Cross Browser Compatibility</li>
+                    <li>Mobile compatible.</li>
+                    <li>Creative Layout</li>
+                    <li>Clean and Professional Code</li>
+                    <li>Easy to Customize</li>
+                    <li>Reports: Projects, tasks, defects, incidents</li>
+                    <li>&amp; much more...</li>
+                </ul>
+            </section>
+            <!-- Features Section End -->
+            <div class="col-md-12">
+                <hr class="p-4">
+            </div>
+            <!-- Admin Account Start -->
+            <section id="theme_options">
+                <div class="page-header">
+                    <h3><span class="title-number"> 6 </span> Theme Options</h3>
+                </div>
+                <ul class="ml-3">
+                    <li>Enable/Disable Callapse Menu</li>
+                    <li>Sidebar Width - Small, Medium or Large</li>
+                    <li>Layout Options</li>
+                    <p><b>PreBuilt Layout</b> - 7 Gradient Sidebar, 7 Transparent Sidebar, Backgroud Images.</p>
+                    <p><b>Dark Layout </b>- for Dark Theme.</p>
+                    <p><b>Custom Layout</b> - Transparent Sidebar, Sidebar Font Colors white or black</p>
+                </ul><br />
+            </section>
+            <!-- Admin Account End -->
+            <div class="col-md-12">
+                <hr class="p-4">
+            </div>
+            <!-- How to use VipsPM Section Start -->
+            <section id="vipspm_uses">
+                <div class="page-header">
+                    <h3><span class="title-number"> 7 </span> How to Use</h3>
+                </div>
+                <p>VipsPM is easy to use among all the users. Please note the below steps for How to use VipsPM.</p>
+                <p>After login into the VipsPM tool with your credentials, you can see the dashboard appear on screen.</p>
+                <p>Initial registred user has full admin rights to manage VipsPM also from this release we have included 6 roles which can be managable from Admin -> Roles</p>
+                <ul class="ml-3">
+                    <li>Admin - can have full access</li>
+                    <li>Staff - has limited access to selected modules </li>
+                    <li>Client - has limited access to selected modules.</li>
+                    <li>Project Manager - has limited access to selected modules.</li>
+                    <li>HR Manager - has limited access to selected modules.</li>
+                    <li>Sales Manager - has limited access to selected modules.</li>
+                </ul><br />
+                <ul class="ml-3">
+                    <li>1. Manage roles by clicking roles menu from the left sidebar. Now you can see that roles lising page apear on screen. Create/edit role by click on buttons.</li>
+                    <li>2. Manage departments by clicking departments menu from left sidebar. Now you can see that departments lising page apear on screen. Manage departments and assign particular roles to that departments.<b>You can change permissions(Create, Edit, Delete) of pages, modules etc, on departments detail page.</b></li>
+                    <li>3. Create users by clicking users menu from left sidebar. Now you can see that users lising page apear on screen. Create users with fillup neccessary fields and also assign permissions to that users using departments, roles(Like admin, staff etc).</li>
+                    <li>4. Create clients by clicking clients menu from left sidebar. Now you can see that clients lising page apear on screen. Create clients with fillup neccessary fields and also assign permissions to that clients using departments, roles(Like client role etc).</li>
+                    <li>5. Create teams by clicking teams menu from left sidebar. Create team with fillup neccessary fields and assign team members to it also choose team leader from selected team members.</li>
+                    <li>6. Create project with fillup neccessary fields like project name etc. You can also assign that project to team members from specific selcted team group.</li>
+                    <li>7. Create defect with fillup neccessary fields like defect name etc. You can assign defect to team members of selected project.</li>
+                    <li>8. Create incident with fillup neccessary fields like defect name etc. You can assign defect to team members of selected project.</li>
+                </ul>
+                <p>You can know more about roles, departments, users, projects and modules detail on below section.</p>
+            </section>
+            <!-- How to use VipsPM Section End -->
+            <div class="col-md-12">
+                <hr class="p-4">
+            </div>
+            <!-- Modules Section Start -->
+            <section id="modules">
+                <div class="page-header">
+                    <h3><span class="title-number"> 8 </span> Module Pages</h3>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2><b>Dashboard</b></h2>
+                        <ul>
+                            <li> Dashboard setting for enable and disable Widgets, Table, etc.</li>
+                            <li>Status of In Progress and Overdue projects, In Progress and Overdue tasks, In Progress and Overdue defects, In Progress and Overdue incidents, Accepted and Declined Estimates, Paid and Unpaid Invoices, Due and Received Payments, Received and Approved Leaves</li>
+                            <li>Count of teams, users, clients, and articles.</li>
+                            <li>Project's task progress show on donut chart, Project's status show on radar chart and monthly report show in bar chart.</li>
+                            <li>Recently created projects list, tasks list, defects list, incident list, todos list, meetings list, announcements list, user activities etc.</li>
+                            <li>Customize your sidebar colors and background images using theme color options by clicking on the top right setting icons.</li>
+                            <li>Mail notifications, languages translation, sidebar layout settings and other menu show in header.</li>
+                            <li>All menus show in left sidebar.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/dashboard.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/calendar.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Calendar</b></h2>
+                        <ul>
+                            <li>Tasks, defects, incidents, meetings, holidays and meetings show in calendar.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Roles</b></h2>
+                        <ul>
+                            <li>Create/Edit/Delete multiples roles</li>
+                            <li>Manage Roles with flexible permissions of view, create, edit, delete rights of each modules</li>
+                            <li>Export csv, excel and pdf files</li>
+                            <li>Default 6 Roles are included for admin, staff, client, Project Manager, HR Manager and Sales Manager</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/roles.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/departments.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Departments</b></h2>
+                        <ul>
+                            <li>Create/Edit/Delete multiples departments</li>
+                            <li>Assign departments wise multiples roles and permissions.</li>
+                            <li>Remove departments wise roles and permissions.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Users</b></h2>
+                        <ul>
+                            <li>Create/Edit/Delete multiples users</li>
+                            <li>Assign permissions(View, edit, delete) to other users.</li>
+                            <li>Invite users</li>
+                            <li>Manage Avatars</li>
+                            <li>Assign Primary and Secondary manager to User</li>
+                            <li>Import users via CSV file</li>
+                            <li>Export csv, excel and pdf files</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/users.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/teams.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Teams</b></h2>
+                        <ul>
+                            <li>Create/Edit/Delete multiples teams with team leader</li>
+                            <li>Import team via CSV file</li>
+                            <li>Before importing teams, make sure that you had import required users.</li>
+                            <li>Export csv, excel and pdf files</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Holidays</b></h2>
+                        <ul>
+                            <li>Create/Edit/Delete/View multiples holidays</li>
+                            <li>Locationwise holidays</li>
+                            <li>Export csv, excel and pdf files</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/holidays.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/meetings.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Meetings</b></h2>
+                        <ul>
+                            <li>Schedule multiples meetings</li>
+                            <li>Edit/Delete/Cancel meetings</li>
+                            <li>Meetings will be added to timesheet</li>
+                            <li>Export csv, excel and pdf files</li>
+                            <li>in sigle meeting, multiple user can create timesheet</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Clients</b></h2>
+                        <ul>
+                            <li>Manage multiples clients</li>
+                            <li>Clients have only one roles client.</li>
+                            <li>Create/Edit/Remove clients</li>
+                            <li>View clients</li>
+                            <li>Export csv, excel and pdf files</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/clients.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/users_profile.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>User/Client Profile</b></h2>
+                        <ul>
+                            <li>Counts user projects, tasks, defects, incidents, comments, activities, articles, messages etc.</li>
+                            <li>Show total hours of projects, tasks, defects, incidents, leaves and meetings</li>
+                            <li>Change user avatar, email and password</li>
+                            <li>User details, projects, tasks, defects, incidents and activities of user.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>File Manager(Media library)</b></h2>
+                        <ul>
+                            <li>Create multiple folders(Nested folders)</li>
+                            <li>Upload multiples files</li>
+                            <li>Edit folders and files name</li>
+                            <li>Download files</li>
+                            <li>Remove folders and files</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/filemanager.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/project_planner.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Project Planner</b></h2>
+                        <ul>
+                            <li>Create projects, sprints, tasks and stories.</li>
+                            <li>Edit/Delete projects, sprints, tasks and stories.</li>
+                            <li>View project planner.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Projects</b></h2>
+                        <ul>
+                            <li>Create multiple projects with custom fields.</li>
+                            <li>Assign team members to projects.</li>
+                            <li>Set budgets and time.</li>
+                            <li>Set start and due date of projects.</li>
+                            <li>Set the progress and status of the projects.</li>
+                            <li>View, edit and delete projects.</li>
+                            <li>Download sample CSV file for project import.</li>
+                            <li>Import projects via CSV file.</li>
+                            <li>Export csv, excel and pdf files</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/projects.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/projects_view.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Project Details</b></h2>
+                        <ul>
+                            <li>Inline editing in project detail fields.</li>
+                            <li>Show project progress and status.</li>
+                            <li>Custom fields</li>
+                            <li>Projects and their tasks, sub-tasks, defects, incidents with due dates.</li>
+                            <li>Add/Remove project comments.</li>
+                            <li>Add/Remove project attachments.</li>
+                            <li>Add/Edit project todos.</li>
+                            <li>Update project note.</li>
+                            <li>Project activities.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Tasks</b></h2>
+                        <ul>
+                            <li>Create multiple tasks with custom fields for specific projects.</li>
+                            <li>Create sub-tasks of any parent task.</li>
+                            <li>Assign project members to tasks.</li>
+                            <li>Set start and due date of tasks.</li>
+                            <li>Set the progress, Overdue and status of the tasks.</li>
+                            <li>Set priorities and estimated hours of the tasks.</li>
+                            <li>Copy, View, edit and delete tasks.</li>
+                            <li>Download sample CSV file for tasks import.</li>
+                            <li>Import tasks via CSV file.</li>
+                            <li>Export csv, excel and pdf files</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/tasks.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/task_detail.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Task Details</b></h2>
+                        <ul>
+                            <li>Inline editing in task detail fields.</li>
+                            <li>Show task progress, estimated hours and actual hours.</li>
+                            <li>Change task status.</li>
+                            <li>Project with version.</li>
+                            <li>Custom fields</li>
+                            <li>Add/Remove task comments.</li>
+                            <li>Add/Remove task attachments.</li>
+                            <li>Add/Edit task todos.</li>
+                            <li>Add/Edit/Remove task timesheet.</li>
+                            <li>Add task note.</li>
+                            <li>Task activities.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Task board(Kanban View)</b></h2>
+                        <ul>
+                            <li>Display kanban view of tasks.</li>
+                            <li>Change the status of tasks using drag and drop.</li>
+                            <li>Create task.</li>
+                            <li>View task details.</li>
+                            <li>Edit/Delete task.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/kanban_board.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/defect.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Defects</b></h2>
+                        <ul>
+                            <li>Create multiple defects with custom fields for specific projects.</li>
+                            <li>Assign team members to the defect.</li>
+                            <li>Set the severity and status of defects.</li>
+                            <li>Set defect types.</li>
+                            <li>View, edit and delete defects.</li>
+                            <li>Export csv, excel and pdf files</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Defect Detail</b></h2>
+                        <ul>
+                            <li>Inline editing in defect detail fields.</li>
+                            <li>Show the severity and status of defect.</li>
+                            <li>Show the defect created and modify dates.</li>
+                            <li>Custom fields</li>
+                            <li>Add/Remove defect comments.</li>
+                            <li>Add/Remove defect attachments.</li>
+                            <li>Add/Edit defect todos.</li>
+                            <li>Add/Edit/Remove defect timesheet.</li>
+                            <li>Add defect notes.</li>
+                            <li>Defect activities.</li>
+                            <li>Defect histories.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/defect_detail.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/incidents.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Incidents (Tickets)</b></h2>
+                        <ul>
+                            <li>Create multiple incidents with custom fields for specific projects.</li>
+                            <li>Assign team members to incidents.</li>
+                            <li>Set priority and status of incidents.</li>
+                            <li>Set incident type.</li>
+                            <li>View, edit and delete incidents.</li>
+                            <li>Export CSV, excel, pdf file.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Incident(Ticket) Detail</b></h2>
+                        <ul>
+                            <li>Inline editing in incident detail fields.</li>
+                            <li>Show the priority and status of the incident.</li>
+                            <li>Show incident created and modified dates.</li>
+                            <li>Custom fields</li>
+                            <li>Add/Remove incident comments.</li>
+                            <li>Add/Remove incident attachments.</li>
+                            <li>Add/Edit/Remove incident timesheet.</li>
+                            <li>Add/Edit incident todos.</li>
+                            <li>Add incident notes.</li>
+                            <li>Incident activities.</li>
+                            <li>Incident histories.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/incident_detail.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/knowledgebase.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Knowledgebase</b></h2>
+                        <ul>
+                            <li>Create knowledgebase with categories and articles.</li>
+                            <li>Create categories.</li>
+                            <li>Search articles.</li>
+                            <li>Create articles in categories.</li>
+                            <li>View/Edit/Delete categories.</li>
+                            <li>View/Edit/Delete articles.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Teamboard</b></h2>
+                        <ul>
+                            <li>Count assign projects to the team.</li>
+                            <li>Show team members and team leader</li>
+                            <li>Count team members.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/teamboard.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/reports.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Reports</b></h2>
+                        <ul>
+                            <li>Projects, tasks, defects and incidents's reports.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Todos</b></h2>
+                        <ul>
+                            <li>Create/Edit/Delete todos.</li>
+                            <li>Change todo status(Open, Completed)</li>
+                            <li>Open todos from the dashboard todos list.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/todos.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/announcement.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Announcements</b></h2>
+                        <ul>
+                            <li>Create an announcement.</li>
+                            <li>Change start and due date.</li>
+                            <li>Send announcements to clients.</li>
+                            <li>Change announcement status.</li>
+                            <li>Export CSV, excel, pdf file.</li>
+                            <li>Open announcement from the dashboard's announcements list.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Mailbox</b></h2>
+                        <ul>
+                            <li>Compose mail with attachments.</li>
+                            <li>Mail save as draft and discard.</li>
+                            <li>Set favorite mails.</li>
+                            <li>Mark as read mails.</li>
+                            <li>Open mailbox from the header menu item.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/mailbox.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/providers.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Providers</b></h2>
+                        <ul>
+                            <li>Create providers for appointments.</li>
+                            <li>Update/Delete providers.</li>
+                            <li>Set appoitments colors.</li>
+                            <li>Export CSV, excel, pdf file.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Appointments</b></h2>
+                        <ul>
+                            <li>Create appointments.</li>
+                            <li>Update/Delete appointments.</li>
+                            <li>Book appoitments on available dates.</li>
+                            <li>Send appointments notification to users.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/appoitments.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/timesheet.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Timesheet</b></h2>
+                        <ul>
+                            <li>Timesheet allows the recording of working hours inside tasks, defects, incidents, meetings as well as manage from Timesheet module. Timesheet automatically sends time report to configured email.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Modules Section End -->
+            <div class="col-md-12">
+                <hr class="p-4">
+            </div>
+            <!-- Settings Start -->
+            <section id="settings">
+                <div class="page-header">
+                    <h3><span class="title-number"> 9 </span> Settings</h3>
+                </div>
+                <p>Here you can get full guide about, how to get and configure settings of the VipsPM tool.</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2><b>Company Detail</b></h2>
+                        <ul>
+                            <li>Change your company name, legal name, short name and other details related to your environments.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/company_detail.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/email_settings.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Email Settings</b></h2>
+                        <ul>
+                            <li>Change your mail settings.</li>
+                            <li>Mail settings used during authentication, projects, tasks, defects, and incidents etc...</li>
+                            <li>You can manually change your mail settings in <code>.env</code> file.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Email Templates</b></h2>
+                        <ul>
+                            <li>
+                                You can change the content of email templates. but Don't change the variables name defined in <code><b>{}</b></code> and link text.<br>
+                                For Exa.<br>
+                                <span class="text-info">{USERNAME}</span><br>
+                                <span class="text-info">Finish your registration...</span><br>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/email_templates.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/email_notification.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Email Notification</b></h2>
+                        <ul>
+                            <li>Active/Inactive email sending.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Cronjob</b></h2>
+                        <ul>
+                            <li>Enable cronjob for the Email queue, Weekly database backup, Daily task reports email to users, Announcement and Leave status update.</li>
+                            <li>Project, Task, Defect, Incident, Appointment and Meeting start reminder.</li>
+                            <li>Project, Task, Defect and Incident overdue reminder.</li>
+                            <li>Estimate and Invoice due reminder and Recurring invoice.</li>
+                            <li>You have to manually create cronjob on your server for use these features.</li>
+                            <li>When using the scheduler, you only need to add the following Cron entry to your server.<br>* * * * * cd /path-to-your-project && php artisan schedule:run >> /dev/null 2>&1</li>
+                            <li>Do not forget to replace /path/to/artisan with the full path to the Artisan command of your laravel application.</li>
+                            <li>This Cron will call the Laravel command scheduler every minute.
+                                When the schedule:run command is executed, Laravel will evaluate your scheduled tasks and runs the tasks that are due.</li>
+                            <li>For more info read the following documentation:<br>
+                                <a href="https://laravel.com/docs/11.x/scheduling" target="_blank">Task Scheduling</a>
+                                <span>|</span>
+                                <a href="https://www.activecampaign.com/help/setting-up-a-cron-job" target="_blank">Setting up cronjob</a>
+                            </li>
+                            <span class="text-info">If you are feeling stuck to create cronjob then ask for support to your hosting provider.</span>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/cronjob.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/manuallocation.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Menu allocations</b></h2>
+                        <ul>
+                            <li>Active/Deactive menu items from the sidebar.</li>
+                            <li>Just drag and drop menu item from both the side.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Theme Settings</b></h2>
+                        <ul>
+                            <li>Change your company logo. Its display on auth pages.</li>
+                            <li>Change your auth pages(login, register, forgot and reset password) background image using login background feature.</li>
+                            <li>Change you sidebar top company logo using the company sidebar logo feature.</li>
+                            <li>Dynamically add sidebar background images using sidebar background images features. Set your sidebar background image by clicking top right side setting icons(Sidebar Layout Options).</li>
+                            <li>Set sidebar layout using sidebar width and collapsed menu.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/theme_settings.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/dashboard_setting.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Dashboard Settings</b></h2>
+                        <ul>
+                            <li>Hide/Show listing features of projects, tasks, defects, incidents, meetings, announcements, recent activities, todos list etc from dashboard.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>System Settings</b></h2>
+                        <ul>
+                            <li>Change timezone, default language, default currency, datatable pagination length, date format, time format and enable/disable registration button etc.</li>
+                            <li>Set datatable record length per page using tables pagination limits.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/system_setting.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/translations.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Translations(Languages)</b></h2>
+                        <ul>
+                            <li>Change languages</li>
+                            <li>Delete languages</li>
+                            <li>Choose language for your application</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Database Backup</b></h2>
+                        <ul>
+                            <li>Backup, restore and download database.</li>
+                            <li>You can also delete backup database.</li>
+                            <li>For autobackup database run the laravel schedular using cron.</li>
+                            <li>Or run the command: <code>php artisan db:backup-custom</code>.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/database_backup.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/custom_fields.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Custom Fields</b></h2>
+                        <ul>
+                            <li>Add more fields on projects, tasks, defects and incidents using custom fields.</li>
+                            <li>Create custom fields based on your requirements.</li>
+                            <li>Edit/Delete custom fields.</li>
+                            <li>Only active custom fields display on projects, tasks, defects and incidents.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Slack Integration</b></h2>
+                        <ul>
+                            <li><a href="https://slack.com/signin" target="_blank">SignIn/Login to slack.</a></li>
+                            <li><a href="https://slack.com/signin#/workspaces" target="_blank">Create workspace.</a></li>
+                            <li>
+                                <a href="https://api.slack.com/apps" target="_blank">Create an app inside the
+                                    workspace.</a>
+                                <ul>
+                                    <li>Create new app.</li>
+                                    <li><a href="https://prnt.sc/qenrHDhyzDua" target="_blank">Select From scratch.</a>
+                                    </li>
+                                    <li><a href="https://prnt.sc/cEJx5QNE5rbl" target="_blank">Name app & choose
+                                            workspace.</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="https://prnt.sc/Iar6SNAb_VXn" target="_blank">Activate Incoming Webhooks.</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/slack.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-12">
+                        <ul>
+                            <li>After that Go to Manage distributions tab and Activate Public Distribution. (Optional)
+                                <ul>
+                                    <li><a href="https://prnt.sc/4WUAaOF0Kbmv" target="_blank">Image 1</a></li>
+                                    <li><a href="https://prnt.sc/Inb3k3xayCIV" target="_blank">Image 2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="https://prnt.sc/wWx4V4cAf9en" target="_blank">After that Go to OAuth and
+                                    Permissions tab & add Redirect URL</a>
+                                <ul>
+                                    <li><a href="https://prnt.sc/LHCDhc_ETAZE" target="_blank">Copy Redirect URL from
+                                            VipsPM.</a></li>
+                                    <li>Don’t forget to save the URL.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="https://prnt.sc/PMXexocevngc" target="_blank">Add Bot Token Scopes (OAuth &
+                                    Permissions -> Scopes -> User Token Scopes)</a>
+                                <ul>
+                                    <li>Incoming-webhook</li>
+                                    <li>chat:write</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="https://prnt.sc/DJ0-3ne2-D6j" target="_blank">Add User Token Scopes (OAuth &
+                                    Permissions -> Scopes -> Bot Token Scopes)</a>
+                                <ul>
+                                    <li>channels:history</li>
+                                    <li>chat:write</li>
+                                    <li>channels:read</li>
+                                    <li>Users:read</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="https://prnt.sc/x3EpUwNka-Wr" target="_blank">Install your app </a> and <a
+                                    href="https://prnt.sc/gLDlDG5J4Jd3" target="_blank">Select Channel.</a>
+                            </li>
+                            <li>
+                                <a href="https://prnt.sc/6_Lx4e5R4E0C" target="_blank">Go to the application detail page
+                                    where you can find your App Credentials.</a>
+                                <ul>
+                                    <li>
+                                        <a href="https://prnt.sc/ZOQ1Bor8pVrO" target="_blank">Save Client ID and Client
+                                            Secret on the tool.</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Now From VIpsPM Tool Click on Add to slack button.
+                                <ul>
+                                    <li>you will be redirected to the slack permission page.</li>
+                                    <li>Here add your channel in which you want to get slack notification. (Step 9)</li>
+                                </ul>
+                            </li>
+                            <li>Go to your Slack Channel and type the following as a message. (Optional Step)
+                                <ul>
+                                    <li><a href="https://example.slack.com/ssb/redirect"
+                                            target="_blank">https://example.slack.com/ssb/redirect</a></li>
+                                    <li><code>/invite @BOT_NAME</code></li>
+                                    <li>Exa. <code>/invite @VipsPM SAAS</code></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/estimate.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Estimate</b></h2>
+                        <ul>
+                            <li>Add ESTIMATE PREFIX like "EST-" as you like</li>
+                            <li>Set default due to all Estimate in days</li>
+                            <li>Enable/Disable Auto Remider for estimate due and set remind day before due</li>
+                            <li>Write notes and tems and condition</li>
+                            <li>Can upload Logo in estimate from this setting</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Invoice</b></h2>
+                        <ul>
+                            <li>Add Invoice PREFIX like "INV-" as you like</li>
+                            <li>Set default due to all Invoice in days</li>
+                            <li>Enable/Disable Auto Remider for invoice due and set remind day before due</li>
+                            <li>Write notes and tems and condition</li>
+                            <li>Can upload Logo in invoice from this setting</li>
+                            <li>Enable GST if dealing with indian company</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/invoice.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="p-4">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/payment.png" class="img-fluid shadow-lg">
+                    </div>
+                    <div class="col-md-6">
+                        <h2><b>Payment Gateway</b></h2>
+                        <ul>
+                            <li>Login to Paypal and fill Paypal Partnership form.</li>
+                            <li>Create Client ID and sandbox</li>
+                            <li>Step are mentioned here - https://developer.paypal.com/docs/business/checkout/set-up-standard-payments/</li>
+                            <li>Write Label whichever you want like "Paypal" and add clientid</li>
+                            <li>You can enable or disable paypal payment gateway</li>
+                        </ul>
+                        <ul>
+                            <li>Signup with Stripe and complete account</li>
+                            <li>create stripe API. steps are in this link - https://stripe.com/docs/keys</li>
+                            <li>Write Label whichever you want like "Stripe" and add Stripe API and Secret</li>
+                            <li>You can enable or disable Stripe payment gateway</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Settings End -->
+            <div class="col-md-12">
+                <hr class="p-4">
+            </div>
+            <!-- Sourcecode Section Start -->
+            <section id="source_code">
+                <div class="page-header">
+                    <h3><span class="title-number"> 10 </span> Source Code Structure</h3>
+                </div>
+                <ul>
+                    <li>Build up on Frontend Angular 8 and Backend Laravel 11.*.</li>
+                    <li>For more info on angular, go to : <a href="https://angular.io" target="_blank">https://angular.io</a></li>
+                    <li>For more info on laravel, go to : <a href="https://laravel.com/docs/11.x" target="_blank">https://laravel.com/docs/11.x</a></li>
+                </ul>
+                <br />
+            </section>
+            <!-- Sourcecode Section Start -->
+            <div class="col-md-12">
+                <hr class="p-4">
+            </div>
+            <!-- Customer Support Start -->
+            <section id="customer_support">
+                <div class="page-header">
+                    <h3><span class="title-number"> 11 </span> Customer Support</h3>
+                </div>
+                <p> ChetsApp always ready to serve its valued customers For any kind of sales support.<br />Contact us via <a href="https://codecanyon.net/item/vipspm-angular8-laravel57-project-suite/25335792/support" target="_blank">codecanyon product support.</a>
+                </p>
+            </section>
+            <!-- Customer Support End -->
+            <div class="col-md-12">
+                <hr class="p-4">
+            </div>
+            <!-- Source Credit Start -->
+            <section id="source_credit">
+                <div class="page-header">
+                    <h3><span class="title-number"> 12 </span> Sources and Credits</h3>
+                </div>
+                <br />
+                <ul>
+                    <li>Bootstrap</li>
+                    <li>jQuery</li>
+                    <li>Angular</li>
+                    <li>Laravel</li>
+                    <li>ngx-bootstrap</li>
+                    <li>ng-select</li>
+                    <li>chartist</li>
+                    <li>angular-calendar</li>
+                    <li>angular-checklist</li>
+                    <li>angular-tree-component</li>
+                    <li>angular/material</li>
+                    <li>chart.js</li>
+                    <li>countup.js-angular2</li>
+                    <li>dropzone</li>
+                    <li>font-awesome</li>
+                    <li>icheck</li>
+                    <li>jquery-slimscroll</li>
+                    <li>jquery-ui</li>
+                    <li>jstree</li>
+                    <li>jszip</li>
+                    <li>lodash</li>
+                    <li>moment</li>
+                    <li>nestable</li>
+                    <li>ng-pick-datetime</li>
+                    <li>ng2-charts</li>
+                    <li>ng2-file-upload</li>
+                    <li>ng2-tree</li>
+                    <li>ngx-bootstrap</li>
+                    <li>ngx-color-picker</li>
+                    <li>ngx-editor</li>
+                    <li>ngx-export-as</li>
+                    <li>ngx-filesaver</li>
+                    <li>ngx-order-pipe</li>
+                    <li>ngx-perfect-scrollbar</li>
+                    <li>ngx-permissions</li>
+                    <li>ng5-slider</li>
+                    <li>ngx-select2</li>
+                    <li>ngx-toastr</li>
+                    <li>ngx-ui-loader</li>
+                    <li>ngx-ui-switch</li>
+                    <li>ngx-translate</li>
+                    <li>pace-js</li>
+                    <li>pdfmake</li>
+                    <li>screenfull</li>
+                    <li>select2</li>
+                    <li>sweetalert2</li>
+                    <li>feather</li>
+                    <li>montserrat</li>
+                    <li>simple-line-icons</li>
+                    <li>pexels</li>
+                    <li>nicolaslopezj/searchable</li>
+                    <li>nwidart/laravel-modules</li>
+                    <li>spatie/laravel-responsecache</li>
+                    <li>tymon/jwt-auth</li>
+                </ul>
+            </section>
+            <!-- Source Credit End -->
+            <div class="col-md-12">
+                <hr class="p-4">
+            </div>
+            <!-- Notes Start -->
+            <section id="notes">
+                <div class="page-header">
+                    <h3><span class="title-number"> 13 </span> Notes</h3>
+                </div>
+                <br />
+                <p>If there are any issues related to database or sql connection then Check your environment settings like database name, tables prefix, host, port, etc.</p>
+                <p>If there any change in <code>.env</code> file then run <code>php artisan config:cache</code></p>
+                <p>If issues related to storage, then set full permission to the <code>storage</code> folder.</p>
+                <p>If you face issues related to bootstrap/cache then set full permission to <code>bootstrap/cache</code> folder.</p>
+                <p>Also, you have to check that <code>public/uploads</code> folder have fully rights or not.</p>
+                <p>If you want solution regarding installation or any query then contact us via <a href="https://codecanyon.net/item/vipspm-angular8-laravel57-project-suite/25335792/support" target="_blank">codecanyon product support</a></p>
+            </section>
+            <!-- Notes End -->
+            <div class="col-md-12">
+                <hr class="p-4">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.js"></script>
+<script src="js/script.js"></script>
+<script src="js/menuspy.js"></script>
+
+</html>
